@@ -1,8 +1,12 @@
+import algorithms.FirstAlgorithm
+import formatters.MessageFormatter
 import mastermind.MasterMind
 
 object MyApp extends App {
-  val mastermind = new MasterMind
-  val code = mastermind.returnCode()
-  print(code)
+  val formatter = new MessageFormatter
+  //val code = formatter.returnCode()
+  //print(code)
+  val algorithm = new FirstAlgorithm
+  print(algorithm.createFirstGuess())
 
 }
